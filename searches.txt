@@ -1,0 +1,6 @@
+#######One string per line to search. Twitch titles/descriptions containing this string are returned. Case insensitive########
+akali
+braum
+lcs championship
+g maul
+ironman

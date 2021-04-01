@@ -1,0 +1,8 @@
+{
+	"TIMEOUT": 120,
+	"TWITCH_API_BASE": "https://api.twitch.tv/",
+	"OAUTH_URL": "https://id.twitch.tv/oauth2/token",
+	"TWITCH_CLIENT_ID": "MY_TWITCH_CLIENT_ID",
+	"TWITCH_CLIENT_SECRET": "MY_TWITCH_CLIENT_SECRET",
+	"TWITCH_CATEGORY": "Old School RuneScape"
+}

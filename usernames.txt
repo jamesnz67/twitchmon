@@ -1,0 +1,5 @@
+##########one twitch username per line to search for on Twitch.tv. Case insensitive###############
+mr king
+sparc mac
+kiwibear
+ammokitty
