@@ -77,7 +77,6 @@ def get_results(pagination_cursor, config, streams_seen, usernames_seen, bearer,
 			logging.warning(f'Error: non-200 status code: {r.status_code}, retry in {config["TIMEOUT"]} secs')
 
 	except Exception as e:
-		raise e
 		logging.error(f'Got Exception: {e}')
 
 	logging.debug(f"sleeping {config['TIMEOUT']}s")
@@ -89,7 +88,7 @@ if __name__ == '__main__':
 		logging.basicConfig(level=logging.DEBUG)
 		config = json.load(config)
 		usernames_seen = {line[5] for line in csv.reader(streamer_data, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)}
-	streams_seen=set()
+	streams_seen = set()
 	bearer = get_bearer(config['TWITCH_CLIENT_ID'], config['TWITCH_CLIENT_SECRET'], config['OAUTH_URL']) 
 	if bearer:
 		category_id = get_category_id(config['TWITCH_CATEGORY'], config, bearer)
